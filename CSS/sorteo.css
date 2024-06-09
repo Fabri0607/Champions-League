@@ -1,0 +1,196 @@
+body {
+    margin-top: 120px; /* Agrega margen superior al cuerpo */
+    font-family: "Montserrat", sans-serif;
+    background-image: url(../img/fondo1.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos para el encabezado */
+header {
+    position: fixed; /* Fijar el encabezado en la parte superior */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegurar que esté encima de otros elementos */
+    top: 0; /* Posicionar en la parte superior */
+    background-color: #000040;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Estilos para el contenedor del botón */
+#cabeza {
+    text-align: center;
+    margin-top: 150px; /* Agregar margen superior para evitar superposición */
+}
+
+
+main {
+    margin-top: 120px; /* Ajusta el valor según sea necesario */
+}
+
+nav {
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+nav li{
+    display: inline;
+    margin: 15px 0 0 15px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color : #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 400ms all;
+}
+
+.caja {
+    width: 100%; /* Ancho completo */
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Encabezados y títulos */
+h2, h3 {
+    text-align: center; /* Centrar el texto */
+    color: #ffffff; /* Color blanco */
+    background-color: transparent; /* Transparente para glassmorphism */
+    margin: 20px 0; /* Espacio vertical */
+}
+
+/* Elementos como mensajes */
+p {
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 545px;
+    left: 45%;
+}
+
+.contenedor-tabla {
+    margin: 20px auto; /* Centra el contenido y agrega espacio */
+    width: 80%; /* Ajusta el ancho */
+}
+
+/* Estilos para enlaces */
+table a {
+    color: #ffffff; /* Color blanco para enlaces */
+    text-decoration: none;
+    margin-right: 10px; /* Espacio entre enlaces */
+}
+
+table a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80%; /* Ancho de la tabla */
+    margin: 0 auto;
+    border-collapse: collapse; /* Fusionar bordes */
+    margin-bottom: 20px; /* Espacio en la parte inferior */
+    color: #ffffff; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); /* Sombra para profundidad */
+}
+
+table th, table td {
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordes translúcidos */
+    padding: 10px; /* Relleno interno */
+    text-align: center; /* Centrar el texto */
+}
+
+table th {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo para encabezados */
+    color: #c7d3fa; /* Color del texto para encabezados */
+    backdrop-filter: blur(15px); /* Efecto de desenfoque */
+}
+
+table tr {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido para filas */
+    font-size: 18px; /* Tamaño de la fuente */
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo para filas pares */
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #4866a7;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: inline-block; /* Para que el contenedor se ajuste al tamaño del contenido */
+}
+
+.input-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    line-height: 3rem; /* Ajusta la altura de línea para centrar verticalmente */
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+        82.3deg,
+        rgb(18, 6, 70) 10.8%,
+        rgb(19, 14, 87) 94.3%
+    );
+    transition: all 0.475s;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* Estilos para mensajes */
+.mensaje {
+    text-align: center; /* Centrar el texto */
+    padding: 10px; /* Relleno interno */
+    margin-bottom: 20px; /* Espacio en la parte inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); /* Sombra */
+}
+
+.mensaje.exito {
+    background-color: #4CAF50; /* Color para mensaje de éxito */
+    color: white; /* Color del texto */
+}
+
+.mensaje.error {
+    background-color: #f44336; /* Color para mensaje de error */
+    color: white; /* Color del texto */
+}

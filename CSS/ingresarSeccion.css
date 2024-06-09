@@ -1,0 +1,242 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #000040;
+}
+
+main {
+    margin-top: 120px; /* Ajusta el valor según sea necesario */
+}
+.button1 {
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    padding-left: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.4s;
+  }
+ 
+  
+/* Estilos para el enlace de "Cerrar Sesión" */
+.nav-item .nav-link[href="logout.php"] {
+    border-radius: 25px; /* Cambiado para bordes más redondeados */
+    position: fixed; 
+    top: 42px; 
+    right: 20px; 
+    border: 2px solid #ffffff;
+    padding: 10px 20px; /* Aumentado el padding para un botón más grande */
+    background-color: transparent;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    
+    gap: 8px; /* Añade espacio entre el icono y el texto */
+    font-size: 16px;
+    transition: all 0.4s; /* Transiciones suaves */
+}
+.nav-item .nav-link[href="logout.php"]:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.nav-item.login button i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+header{
+    background-color:#000040;
+}
+
+.logo{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+nav {
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+nav li{
+    display: inline;
+    margin: 15px 0 0 15px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color : #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 400ms all;
+}
+
+.intro{
+    width: 100%;
+    margin: 70px 0 15px 0;
+}
+
+.intro video{
+    width: 100%;
+    height: auto;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+#titulo-menu{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.form-box {
+    position: relative;
+    width: 750px;
+    height: 450px;
+    background: transparent;
+    backdrop-filter: blur(1px) brightness(50%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto; /* Agrega margen automático para centrar horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#ffffff;
+}
+.botones-container {
+    display: flex; /* Establece el contenedor como flex */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 90%; /* Ancho relativo al 90% del ancho de la ventana */
+    margin: 0 auto; /* Centra el contenedor */
+    white-space: nowrap; /* Evita que las tarjetas se envuelvan */
+    padding-bottom: 20px; /* Añade espacio en la parte inferior para la barra de desplazamiento */
+}
+
+
+.botones-container button {
+  line-height: 1;
+  text-decoration: none;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  background-color: var(--clr);
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: .75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.4s all;
+  width: 400px; /* Ancho fijo */
+  font-size: 20px; /* Aumenta el tamaño del texto */
+  margin: 20px; /* Aumenta el espacio entre botones */
+}
+
+.botones-container button:hover {
+    border-color: #00ADEF; /* Cambia el color del borde al pasar el cursor */
+    transform: scale(1.1); /* Efecto de escala al pasar el cursor */
+    box-shadow: 0 0 20px #00ADEF; /* Sombra con efecto de neón */
+}
+
+.botones-container button:active {
+    border-color: #00ADEF; /* Cambia el color del borde al hacer clic */
+    transform: scale(1); /* Restaurar la escala */
+}
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: #ffffff;
+}
+
+.principal{
+    text-align: center;
+    padding: 3em 0;
+    background: #000040;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.productos-est {
+    background-image: url("https://img.uefa.com/imgml/uefacom/ucl/social/og-default.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em 0; /* Ajusta el espaciado como desees */
+    text-align: center; /* Puedes ajustar la alineación del contenido según sea necesario */
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 40px;
+    color:#ffffff;
+    background-image: url("https://img.uefa.com/imgml/uefacom/ucl/social/og-default.jpg") no-repeat;
+}
+
+.productos a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer{
+    text-align: center;
+    padding: 50px;
+    background-image: url(../img/Footer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.redes-sociales{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo-redes{
+    width: 50px;
+    height: 50px;
+    margin: 0 0 20px 10px;
+    transition: 400ms all;
+}
+
+.logo-redes:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}

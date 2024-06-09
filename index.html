@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>UEFA Champions League</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS\reset.css">
+  <link rel="stylesheet" href="CSS\styleIndex.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top"
+      style="background-color: #000040; margin-top: 0; padding-top: 0px; padding-bottom: 15px; display: block;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Logo_UEFA.png" alt="Logo de la UEFA Champions League" width="100" height="100"
+            class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gruposPublica.php">Grupos</a>
+            </li>
+            <li class="nav-item login">
+              <button class="btn btn-outline-light" onclick="window.location.href='login-page.php'">
+                <i class="fas fa-sign-in-alt"></i> Iniciar Sesión
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <video controls autoplay playsinline loop src="img/UEFA_Intro.mp4"></video>
+    </div>
+
+    <div class="principal">
+      <h2 class="titulo-principal">UEFA Champions League</h2>
+
+      <p>
+        La UEFA Champions League, fundada en 1955 y organizada por la UEFA, es una de las competiciones de fútbol más destacadas a nivel de clubes en el mundo. Con un formato que incluye una fase de grupos seguida de eliminatorias directas, equipos de toda Europa compiten en emocionantes partidos de ida y vuelta hasta llegar a la gran final. Entre los equipos participantes se encuentran algunos de los clubes más exitosos del continente, como el Real Madrid, Barcelona, Bayern Munich y Manchester United. Esta competición también atrae a algunas de las estrellas más brillantes del fútbol, desde Lionel Messi y Cristiano Ronaldo hasta Neymar y Kevin De Bruyne.
+      </p>
+
+      <p>
+        ¡Únete a nosotros para seguir de cerca toda la acción de esta apasionante competición!
+      </p>
+    </div>
+
+    <section class="productos-est">
+      <h3 class="titulo-principal">Últimos Campeones</h3>
+    </section>
+
+    <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: 30px; width: 90%; margin: auto;">
+      <div class="col">
+        <div class="card text-white text-center bg-dark border-primary productos">
+          <a href="https://www.realmadrid.com/es-ES" style="text-decoration: none; /* Quita el subrayado */ color: inherit;"><img src="img/Logo Real.png" class="card-img-top img-madrid"
+              alt="Logo del Real Madrid" />
+          <div class="card-body">
+            <h5 class="card-title">REAL MADRID</h5>
+            <p class="card-text">
+              Campeón de la UEFA Champions League en la temporada 2021-2022.
+            </p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white text-center bg-dark border-primary productos">
+          <a href="https://www.chelseafc.com/en" style="text-decoration: none; /* Quita el subrayado */ color: inherit;"><img src="img/Logo Chelsea.png" class="card-img-top img-chelsea"
+              alt="Logo del Chelsea" />
+          <div class="card-body">
+            <h5 class="card-title">CHELSEA</h5>
+            <p class="card-text">
+              Campeón de la UEFA Champions League en la temporada 2020-2021.
+            </p></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-white text-center bg-dark border-primary productos">
+          <a href="https://fcbayern.com/es" style="text-decoration: none; /* Quita el subrayado */ color: inherit;"><img src="img/Logo Bayern.png" class="card-img-top img-bayern"
+              alt="Logo del Bayern Munich" />
+          <div class="card-body">
+            <h5 class="card-title">BAYERN MUNICH</h5>
+            <p class="card-text">
+              Campeón de la UEFA Champions League en la temporada 2019-2020.
+            </p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contacto">
+      <h5 class="titulo-principal">Contactanos</h5>
+      <form>
+        <label for="nombreapellido">Nombre y Apellido</label>
+        <input type="text" id="nombreapellido" class="input-padron" required placeholder="Nombre y Apellido">
+
+        <label for="correoelectronico">Correo Electrónico</label>
+        <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@example.com">
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" class="input-padron" required placeholder="(XXX) XXXX XXXX">
+
+        <label for="mensaje">Mensaje</label>
+        <textarea cols="70" rows="10" id="mensaje" class="input-padron" required> </textarea>
+
+        <input type="submit" value="Enviar formulario" class="enviar">
+
+      </form>
+
+    </div>
+  </main>
+
+  <footer>
+    <img class="logo" src="img/Logo_UEFA.png" alt="Logo de Rostipollos CR">
+    <br>
+    <br>
+    <div class="redes-sociales">
+      <a href="https://twitter.com/championsleague"><img class="logo-redes" src="img/twitter.png"
+          alt="logo-twitter"></a>
+      <a href="https://www.instagram.com/championsleague/"><img class="logo-redes" src="img/instagram.png"
+          alt="logo-instagram"></a>
+      <a href="https://www.facebook.com/championsleague"><img class="logo-redes" src="img/facebook.png"
+          alt="logo-facebook"></a>
+    </div>
+    <p class="copyright">&copy Copyright UEFA Champions League - 2024</p>
+  </footer>
+</body>
+
+</html>

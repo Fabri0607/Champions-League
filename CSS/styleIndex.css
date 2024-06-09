@@ -1,0 +1,261 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #000040;
+}
+
+main {
+    margin-top: 120px; /* Ajusta el valor según sea necesario */
+}
+
+
+header {
+    background-color: #000040;
+    /*position: relative; /* Añadido para establecer un contexto de posición */
+    display: flex;
+
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.nav-item.login button {
+    border-radius: 25px; /* Cambiado para bordes más redondeados */
+    position: fixed; 
+    top: 42px; 
+    right: 20px; 
+    border: 2px solid #ffffff;
+    padding: 10px 20px; /* Aumentado el padding para un botón más grande */
+    background-color: transparent;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.nav-item.login button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.nav-item.login button i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+
+nav {
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+nav li {
+    display: inline;
+    margin: 15px 0 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 400ms all;
+}
+
+.intro {
+    width: 100%;
+    margin: 70px 0 15px 0;
+}
+
+.intro video {
+    width: 100%;
+    height: auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    color: #ffffff;
+}
+
+.principal {
+    width: 100%;
+    text-align: center;
+    padding: 3em 0;
+    background: #000040;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.productos {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.productos img {
+    margin: 0 auto;
+    padding: 5px;
+    transition: 400ms all;
+}
+
+.img-madrid {
+    width: 155px;
+    height: 200px;
+}
+
+.img-chelsea {
+    width: 200px;
+    height: 200px;
+}
+
+.img-bayern {
+    width: 200px;
+    height: 200px;
+}
+
+.productos:hover {
+    cursor: pointer;
+}
+
+.productos h5{
+    font-size: 30px;
+    font-weight: bold;
+    transition: 400ms all;
+}
+
+.productos:hover h5 {
+    font-size: 33px;
+    margin: 0 0 15px 0;
+}
+
+.productos:hover img {
+    transform: scale(1.1);
+}
+
+.productos:active img {
+    transform: scale(1);
+}
+
+.contacto {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: linear-gradient(#000040, #031198);
+}
+
+.contacto h5 {
+    color: white;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto form label,
+form legend {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: white;
+}
+
+.input-padron {
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.enviar {
+    width: 50%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #000000;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #000040;
+    transform: scale(1.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-image: url(../img/Footer.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.redes-sociales {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo-redes {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 20px 10px;
+    transition: 400ms all;
+}
+
+.logo-redes:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+header,
+footer {
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .principal,
+    .contacto,
+    .intro, body {
+        width: 100%;
+    }
+
+    nav {
+        max-width: 100%; /* Evita que la navegación se extienda más allá del ancho del body */
+        margin: 0 auto;
+    }
+
+    .contacto form {
+        width: 100%; 
+    }
+
+    .input-padron {
+        width: 90%; 
+    }
+
+} 

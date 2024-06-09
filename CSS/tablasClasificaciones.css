@@ -1,0 +1,132 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url(../img/fondo1.jpeg); /* Imagen de fondo */
+    background-size: cover; /* Cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir */
+    background-attachment: fixed; /* Fondo fijo al desplazarse */
+    margin: 0;
+    padding: 0;
+}
+footer {
+    margin-top: 40px; /* Espaciado entre las tablas y el footer */
+    text-align: center; /* Centrar el contenido del footer */
+}
+
+
+nav {
+    text-align: center;
+    margin: 15px 0 0 0;
+}
+
+nav li{
+    display: inline;
+    margin: 15px 0 0 15px;
+}
+
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color : #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 400ms all;
+}
+/* CSS */
+main {
+    margin-top: 160px; /* Ajusta el valor según sea necesario */
+}
+
+
+.caja {
+    width: 100%; /* Ancho completo */
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Encabezados y títulos */
+h2, h3 {
+    text-align: center; /* Centrar el texto */
+    color: #ffffff; /* Color blanco */
+    margin: 20px 0; /* Espacio vertical */
+}
+
+.contenedor-tabla {
+    margin: 20px auto; /* Centrar el contenido */
+    width: 80%; /* Ancho de las tablas */
+    margin-bottom: 40px; /* Espaciado adicional entre tablas y footer */
+    margin-top: 150px; 
+}
+
+/* Estilos para tablas con efecto neón azul */
+table {
+    width: 80%; /* Ajustar el ancho para centrar la tabla */
+    border-collapse: collapse; /* Fusionar bordes */
+    margin-bottom: 20px; /* Espacio en la parte inferior */
+    margin: 0 auto;
+    color: #ffffff; /* Color del texto */
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo translúcido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); /* Sombra */
+    border: 2px solid #0589bd; /* Borde de neón azul */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+table th, table td {
+    padding: 10px; /* Relleno para las celdas */
+    text-align: center; /* Centrar el texto */
+    width: 10%; /* Ancho para cada columna (10 columnas) */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordes translúcidos */
+}
+
+table th {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo para encabezados */
+    color: #c7d3fa; /* Color del texto para encabezados */
+    box-shadow: 0 0 10px #00ADEF; /* Efecto de neón azul */
+}
+
+table tr {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido para filas */
+    font-size: 18px; /* Tamaño de la fuente */
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo para filas pares */
+}
+
+table tr:hover {
+    box-shadow: 0 0 10px #00ADEF; /* Efecto de neón al pasar el cursor */
+}
+
+button {
+    padding: 10px 20px; /* Tamaño del botón */
+    background-color: #00ADEF; /* Color del botón con efecto neón azul */
+    color: white; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); /* Sombra */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+
+button:hover {
+    background-color: #0072a3; /* Cambia el color del botón al pasar el cursor */
+}
+
+.mensaje {
+    text-align: center; /* Centrar el texto */
+    padding: 10px; /* Relleno interno */
+    margin-bottom: 20px; /* Espacio en la parte inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6); /* Sombra */
+}
+
+.mensaje.exito {
+    background-color: #00ADEF; /* Color azul para mensaje de éxito */
+    color: white; /* Color del texto */
+}
+
+.mensaje.error {
+    background-color: #f44336; /* Color rojo para mensaje de error */
+    color: white;
+}
